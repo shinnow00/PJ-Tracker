@@ -1,0 +1,63 @@
+
+:root{
+  --bg:#0b0b0c;
+  --panel:#121213;
+  --muted:#9aa0a6;
+  --accent:#ffb86b;
+  --danger:#ff6b6b;
+}
+*{box-sizing:border-box;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,Arial;}
+body,html,#root{height:100%;margin:0;background:linear-gradient(180deg,#070708 0%,#0c0c0d 100%);color:#e6e6e6}
+.app-root{min-height:100vh;display:flex;flex-direction:column}
+.topbar{height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;background:linear-gradient(90deg,#0f0f10,#0b0b0c);border-bottom:1px solid rgba(255,255,255,0.03)}
+.brand{font-weight:700;color:#fff}
+nav .navlink{margin-left:12px;color:var(--muted);text-decoration:none;padding:8px;border-radius:6px}
+nav .navlink:hover{background:rgba(255,255,255,0.02);color:#fff}
+
+.main-area{flex:1;padding:28px}
+.footer{text-align:center;padding:12px;color:var(--muted);font-size:13px}
+
+.panel{background:var(--panel);border-radius:12px;padding:18px;box-shadow:0 6px 30px rgba(0,0,0,0.6);}
+
+/* center panels */
+.center-panel{max-width:520px;margin:40px auto;padding:24px;text-align:center}
+.form{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+.form input, .form textarea, .form select{background:#0b0b0c;border:1px solid rgba(255,255,255,0.04);padding:10px;border-radius:8px;color:#ddd}
+.form .btn{margin-top:6px}
+
+/* buttons */
+.btn{background:linear-gradient(180deg,#ffb86b,#ff9f3b);color:#111;padding:8px 12px;border-radius:10px;border:none;cursor:pointer;font-weight:700}
+.btn.outline{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+.btn.red{background:var(--danger);color:#111}
+.btn.big{padding:12px 18px;border-radius:20px}
+
+/* Admin layout */
+.admin-panel{max-width:1100px;margin:20px auto;display:flex;flex-direction:column;gap:18px}
+.admin-header{display:flex;justify-content:space-between;align-items:center}
+.admin-actions{display:flex;gap:8px}
+.admin-section{background:linear-gradient(90deg,#0a0a0b,#0f0f10);padding:12px;border-radius:8px}
+
+.form-inline{display:flex;gap:8px;align-items:center}
+.milestone-list{display:flex;flex-direction:column;gap:12px;margin-top:12px}
+.milestone-card{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px}
+.milestone-head{display:flex;justify-content:space-between;align-items:center}
+.media-grid{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.media-item img, .media-item video{width:140px;height:90px;object-fit:cover;border-radius:6px}
+
+/* Client layout - peacock like */
+.client-panel{max-width:1200px;margin:18px auto;padding:18px}
+.client-header{display:flex;justify-content:space-between;align-items:center}
+.content-grid{display:grid;grid-template-columns:360px 1fr;gap:20px;margin-top:18px}
+.left-col{background:transparent;padding:10px}
+.big-head{font-size:56px;font-weight:900;line-height:0.9;color:#fff}
+.lead{color:var(--muted);max-width:340px}
+.right-col{background:transparent;padding:8px}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:12px;border-radius:10px}
+.card-media{display:flex;gap:8px;margin-top:8px}
+.thumb img, .thumb video{width:100%;height:140px;object-fit:cover;border-radius:8px}
+
+/* small */
+.hint{color:var(--muted);font-size:13px}
+.error{color:var(--danger);margin-top:8px}
+.muted{color:var(--muted);font-size:13px}
